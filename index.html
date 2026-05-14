@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="InAmigos Foundation — India's youth-led NGO working on food, education, environment & welfare across 28 states. Section 8 | 80G & 12A | ISO 9001:2015 | NITI Aayog Registered.">
+<meta name="description" content="InAmigos Foundation — India's youth-led NGO working on food, education, environment & welfare. Section 8 | 80G & 12A | ISO 9001:2015 | NITI Aayog Registered.">
 <meta property="og:title" content="InAmigos Foundation — Empowering India Together">
-<meta property="og:description" content="Youth-led NGO | 50,000+ lives touched | 28 states | 200+ volunteers">
+<meta property="og:description" content="Youth-led NGO | 50,000+ lives touched | 200+ volunteers">
 <title>InAmigos Foundation</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -167,6 +167,11 @@
     background: linear-gradient(135deg, #1B6B3A22, #FF6B2B22);
     display: flex; align-items: center; justify-content: center;
   }
+  .about-img-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .about-img-placeholder { font-size: 80px; opacity: 0.3; }
   .about-img-accent {
     position: absolute; bottom: 0; right: 0; width: 55%;
@@ -190,7 +195,14 @@
     position: relative; overflow: hidden;
   }
   .cause-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(15,26,15,0.12); border-color: transparent; }
-  .cause-card-icon { font-size: 36px; margin-bottom: 16px; }
+  .cause-card-icon { margin-bottom: 16px; }
+  .cause-card-icon img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+  }
   .cause-card h3 { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
   .cause-card p { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 20px; }
   .cause-card-cta { font-size: 13px; font-weight: 500; color: var(--saffron); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: gap 0.2s; }
@@ -359,13 +371,13 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-left">
-    <div class="hero-eyebrow fade-up">Youth-Led NGO · Active since 2019</div>
+    <div class="hero-eyebrow fade-up">Youth-Led NGO · Active since 2020</div>
     <h1 class="fade-up delay-1">
       <em>Empowering</em><br>
       <span>India</span><br>Together
     </h1>
     <p class="hero-desc fade-up delay-2">
-      We work at the grassroots — feeding families, educating children, healing the planet, and giving every Indian a dignified life. Across 28 states. 200+ volunteers. One mission.
+      We work at the grassroots — feeding families, educating children, healing the planet, and giving every Indian a dignified life. 200+ volunteers. One mission.
     </p>
     <div class="hero-btns fade-up delay-3">
       <a href="#donate" class="btn-primary">❤️ Donate Now</a>
@@ -380,9 +392,9 @@
   </div>
   <div class="hero-right fade-up delay-2">
     <div style="position:relative;">
-      <div class="floating-badge">🇮🇳 28 States</div>
       <div class="hero-card">
         <p class="hero-card-title">Live Impact Dashboard</p>
+        <img src="logo-download.png" alt="InAmigos Foundation Logo" style="width: 80px; height: auto; margin-bottom: 20px; border-radius: 12px;">
         <div class="stats-grid">
           <div class="stat-item">
             <div class="stat-num orange">50K+</div>
@@ -429,11 +441,11 @@
   <div class="about-inner">
     <div class="about-image-stack">
       <div class="about-img-main">
-        <span class="about-img-placeholder">🌱</span>
+        <img src="logo-download.png" alt="InAmigos Foundation Logo">
       </div>
       <div class="about-img-accent">
-        <h4>Founded<br>in 2019</h4>
-        <p>Started by a group of passionate youth who believed change starts at the grassroots.</p>
+        <h4>Founded<br>in 2020</h4>
+        <p>Founded by Mr. Govind Shukla (Founder & CEO) and a group of passionate youth who believed change starts at the grassroots.</p>
       </div>
     </div>
     <div>
@@ -476,44 +488,44 @@
   <div class="causes-grid">
     <div class="cause-card">
       <span class="cause-tag tag-active">Active</span>
-      <div class="cause-card-icon">🍽️</div>
+      <div class="cause-card-icon"><img src="sewa.jpg" alt="Project SEVA" style="width: 144px; height: 144px; border-radius: 8px; object-fit: cover;"></div>
       <h3>Project SEVA</h3>
       <p>Providing free meals to underprivileged families, daily wage workers, and the homeless. No one sleeps hungry in our community.</p>
       <a href="#donate" class="cause-card-cta">Support SEVA →</a>
     </div>
     <div class="cause-card">
       <span class="cause-tag tag-active">Active</span>
-      <div class="cause-card-icon">📚</div>
+      <div class="cause-card-icon"><img src="bachpanshala.jpg" alt="Bachpanshala" style="width: 144px; height: 144px; border-radius: 8px; object-fit: cover;"></div>
       <h3>Bachpanshala</h3>
       <p>Free education for underprivileged children including notebooks, stationery, and mentorship. Every child deserves to learn.</p>
       <a href="#donate" class="cause-card-cta">Support Education →</a>
     </div>
     <div class="cause-card">
       <span class="cause-tag tag-active">Active</span>
-      <div class="cause-card-icon">🌿</div>
+      <div class="cause-card-icon"><img src="prakriti.jpg" alt="Prakriti" style="width: 144px; height: 144px; border-radius: 8px; object-fit: cover;"></div>
       <h3>Prakriti</h3>
       <p>Environmental conservation through tree plantation drives, clean-up campaigns, and spreading ecological awareness.</p>
       <a href="#donate" class="cause-card-cta">Support Prakriti →</a>
     </div>
     <div class="cause-card">
       <span class="cause-tag tag-active">Active</span>
-      <div class="cause-card-icon">🕊️</div>
+      <div class="cause-card-icon"><img src="udaan.jpg" alt="Udaan" style="width: 144px; height: 144px; border-radius: 8px; object-fit: cover;"></div>
       <h3>Udaan</h3>
       <p>Women empowerment and skill development programmes helping women achieve financial independence and confidence.</p>
       <a href="#donate" class="cause-card-cta">Support Udaan →</a>
     </div>
     <div class="cause-card">
       <span class="cause-tag tag-active">Active</span>
-      <div class="cause-card-icon">💧</div>
+      <div class="cause-card-icon"><img src="jeev.jpg" alt="Jeev" style="width: 144px; height: 144px; border-radius: 8px; object-fit: cover;"></div>
       <h3>Jeev</h3>
       <p>Animal welfare and rescue operations — treating injured strays, running adoption drives, and fighting animal cruelty.</p>
       <a href="#donate" class="cause-card-cta">Support Jeev →</a>
     </div>
     <div class="cause-card">
       <span class="cause-tag tag-active">Active</span>
-      <div class="cause-card-icon">🏗️</div>
+      <div class="cause-card-icon"><img src="logo-download.png" alt="Vikas" style="width:100%; height:100%; object-fit:cover;"></div>
       <h3>Vikas</h3>
-      <p>Rural development including infrastructure support, clean water access, and sustainable livelihood programmes.</p>
+      <p>Rural development including skill development and employability programmes to create sustainable livelihoods.</p>
       <a href="#donate" class="cause-card-cta">Support Vikas →</a>
     </div>
   </div>
@@ -523,7 +535,7 @@
 <section class="impact" id="impact">
   <div class="impact-inner">
     <div class="impact-text">
-      <div class="section-eyebrow" style="color:var(--saffron);">Our Impact Since 2019</div>
+      <div class="section-eyebrow" style="color:var(--saffron);">Our Impact Since 2020</div>
       <h2 class="section-title">Numbers that<br>prove the work</h2>
       <p class="section-desc">Every number below is a real person helped, a real problem solved. This is what your donation powers.</p>
       <a href="#donate" class="btn-primary" style="margin-top:28px;display:inline-flex;">Be Part of This →</a>
@@ -532,17 +544,12 @@
       <div class="impact-stat">
         <div class="impact-stat-num">50K+</div>
         <div class="impact-stat-label">Beneficiaries reached</div>
-        <div class="impact-stat-sub">↑ Across 6 projects since 2019</div>
+        <div class="impact-stat-sub">↑ Across 6 projects since 2020</div>
       </div>
       <div class="impact-stat">
         <div class="impact-stat-num">200+</div>
         <div class="impact-stat-label">Active volunteers</div>
         <div class="impact-stat-sub">↑ Youth-powered workforce</div>
-      </div>
-      <div class="impact-stat">
-        <div class="impact-stat-num">28</div>
-        <div class="impact-stat-label">States covered</div>
-        <div class="impact-stat-sub">↑ Pan-India presence</div>
       </div>
       <div class="impact-stat">
         <div class="impact-stat-num">6</div>
@@ -622,7 +629,7 @@
       <span class="donate-amount-sub">Your choice</span>
     </div>
   </div>
-  <a href="https://pages.razorpay.com/pl_H621G6ea64ZMI7/view" target="_blank" class="donate-btn">Donate Now — Secure & Tax-Exempt ✓</a>
+  <a href="https://rzp.io/l/kWQ87HP" target="_blank" class="donate-btn">Donate Now — Secure & Tax-Exempt ✓</a>
   <p style="font-size:13px;color:rgba(255,255,255,0.4);margin-top:20px;">80G & 12A certified · Tax receipts issued instantly · Fully transparent fund usage</p>
 </section>
 
@@ -643,7 +650,7 @@
         <div class="contact-item-icon">📧</div>
         <div>
           <h5>Email</h5>
-          <p>support@inamigosfoundation.org.in</p>
+          <p>inamigosfoundation@gmail.com</p>
         </div>
       </div>
       <div class="contact-item">
@@ -658,6 +665,7 @@
         <div>
           <h5>Want to Volunteer?</h5>
           <p>We're always looking for passionate youth to join our mission across India.</p>
+          <a href="https://forms.gle/AB4c1hLaDDmtrKGU7" target="_blank" style="color: var(--saffron); text-decoration: none; font-weight: 500;">Fill Volunteer Form →</a>
         </div>
       </div>
     </div>
@@ -704,11 +712,11 @@
         <div class="nav-logo-icon">🌱</div>
         <span class="nav-logo-text" style="color:#fff;">InAmigos Foundation</span>
       </a>
-      <p>India's youth-led nonprofit working for food security, education, environment, and human dignity across 28 states since 2019.</p>
+      <p>India's youth-led nonprofit working for food security, education, environment, and human dignity since 2020.</p>
       <div class="footer-socials">
-        <a href="https://www.instagram.com/inamigosfoundation" class="social-link" target="_blank">📷</a>
+        <a href="https://www.instagram.com/inamigos" class="social-link" target="_blank">📷</a>
         <a href="https://twitter.com/InamigosF" class="social-link" target="_blank">𝕏</a>
-        <a href="https://www.facebook.com/inamigosfoundation" class="social-link" target="_blank">f</a>
+        <a href="https://www.facebook.com/inamigos.inamigos" class="social-link" target="_blank">f</a>
         <a href="https://www.linkedin.com/company/inamigosfoundation" class="social-link" target="_blank">in</a>
       </div>
     </div>
